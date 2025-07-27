@@ -25,22 +25,23 @@ export default function ContactSection({ t, language }: ContactSectionProps) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header with enhanced typography */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 pt-12 pb-10">
           <div className="inline-flex items-center gap-3 mb-6 px-6 py-3 bg-white/60 backdrop-blur-xl rounded-full border border-[#30abd1]/20 shadow-lg">
-            <div className="w-2 h-2 bg-[#30abd1] rounded-full animate-pulse"></div>
+            <div className="w-2 h-2 bg-[#256734] rounded-full animate-pulse"></div>
             <span className="text-sm font-semibold text-[#256734] tracking-wider uppercase">
               {language === "ar" ? "تواصل معنا" : "Get in Touch"}
             </span>
           </div>
-          
-          <h2 className="text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#256734] via-[#30abd1] to-[#43b15d] mb-6 leading-tight">
-            {t("contactTitle")}
-          </h2>
+
+          <h2 className="text-6xl leading-tight font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#256734] via-[#256734] to-[#43b15d] ">
+  {t("contactTitle")}
+</h2>
+
           
           <div className="flex items-center justify-center gap-2 mb-8">
-            <div className="h-0.5 w-20 bg-gradient-to-r from-transparent to-[#30abd1] rounded-full"></div>
-            <div className="w-3 h-3 bg-[#30abd1] rounded-full shadow-lg shadow-[#30abd1]/50"></div>
-            <div className="h-0.5 w-20 bg-gradient-to-l from-transparent to-[#30abd1] rounded-full"></div>
+            <div className="h-0.5 w-20 bg-gradient-to-r from-transparent to-[#256734] rounded-full"></div>
+            <div className="w-3 h-3 bg-[#256734] rounded-full shadow-lg shadow-[#256734]/50"></div>
+            <div className="h-0.5 w-20 bg-gradient-to-l from-transparent to-[#256734] rounded-full"></div>
           </div>
           
           <p className="text-xl text-[#256734]/80 max-w-3xl mx-auto leading-relaxed font-medium">
@@ -49,7 +50,7 @@ export default function ContactSection({ t, language }: ContactSectionProps) {
         </div>
 
         {/* Enhanced Contact Cards Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
+        <div className="grid md:grid-cols-3 scale-95 gap-8 mb-24">
           {/* Phone Card */}
           <Card className="group relative border-0 bg-white/40 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgb(48,171,209,0.15)] transition-all duration-700 rounded-3xl overflow-hidden hover:-translate-y-2">
             {/* Gradient border effect */}
