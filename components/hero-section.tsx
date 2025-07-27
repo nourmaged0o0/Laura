@@ -1,17 +1,21 @@
-"use client"
 
-import { useLanguage } from "@/contexts/language-context"
 import { Button } from "@/components/ui/button"
 import { ChevronDown } from "lucide-react"
 
-export default function HeroSection() {
-  const { t, language } = useLanguage()
+interface HeroSectionProps {
+  t: (key: string) => string;
+  language: string;
+}
+
+export default function HeroSection({ t, language }: HeroSectionProps) {
   const isRTL = language === "ar"
 
   const scrollToAbout = () => {
-    const element = document.getElementById("about")
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+    if (typeof window !== "undefined") {
+      const element = document.getElementById("about")
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" })
+      }
     }
   }
 

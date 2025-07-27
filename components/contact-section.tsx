@@ -1,11 +1,13 @@
-"use client"
 
-import { useLanguage } from "@/contexts/language-context"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from "lucide-react"
 
-export default function ContactSection() {
-  const { t, language } = useLanguage()
+interface ContactSectionProps {
+  t: (key: string) => string;
+  language: string;
+}
+
+export default function ContactSection({ t, language }: ContactSectionProps) {
   const isRTL = language === "ar"
 
   return (

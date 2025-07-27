@@ -1,10 +1,12 @@
-"use client"
 
-import { useLanguage } from "@/contexts/language-context"
 import Image from "next/image"
 
-export default function Footer() {
-  const { t, language } = useLanguage()
+interface FooterProps {
+  t: (key: string) => string;
+  language: string;
+}
+
+export default function Footer({ t, language }: FooterProps) {
 
   return (
     <footer className="bg-gradient-to-r from-[#256734] to-emerald-700 text-white py-12 relative overflow-hidden">

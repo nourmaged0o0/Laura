@@ -1,11 +1,13 @@
-"use client"
 
-import { useLanguage } from "@/contexts/language-context"
 import { Card, CardContent } from "@/components/ui/card"
 import { Target, Eye, Leaf, Award, Sparkles } from "lucide-react"
 
-export default function AboutSection() {
-  const { t, language } = useLanguage()
+interface AboutSectionProps {
+  t: (key: string) => string;
+  language: string;
+}
+
+export default function AboutSection({ t, language }: AboutSectionProps) {
   const isRTL = language === "ar"
 
   return (
