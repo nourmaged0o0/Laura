@@ -61,10 +61,10 @@ export function Navigation() {
           <div className="md:hidden flex items-center gap-2">
             <LanguageToggle />
             <Button
-              // variant="ghost"
-              // size="sm"
+              variant="ghost"
+              size="sm"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-[#256734] shadow-sm hover:bg-[#256734]/10"
+              className="text-[#256734] hover:bg-[#256734]/10"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
