@@ -12,7 +12,7 @@ export function LanguageToggle() {
       variant="outline"
       size="sm"
       onClick={() => setLanguage(language === "ar" ? "en" : "ar")}
-      className="flex items-center gap-2 border-[#256734]/30 text-[#256734] hover:bg-gradient-to-r hover:from-[#256734] hover:to-emerald-600 hover:text-white hover:border-transparent bg-white/80 backdrop-blur-sm transition-all duration-300 shadow-sm hover:shadow-md"
+      className="flex items-center gap-2 border-[#256734]/30 text-[#256734] hover:bg-gradient-to-r hover:from-[#256734] hover:to-emerald-600 hover:text-white hover:border-transparent bg-white/80 backdrop-blur-sm transition-all duration-300 shadow-sm hover:shadow-md rounded-xl"
     >
       <Globe className="h-4 w-4" />
       {language === "ar" ? "EN" : "عربي"}

@@ -12,7 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection t={t} language={language} />
-      <AboutSection t={t} language={language} />
+      {/* <AboutSection t={t} language={language} /> */}
       <ContactSection t={t} language={language} />
       <Footer t={t} language={language} />
     </main>
